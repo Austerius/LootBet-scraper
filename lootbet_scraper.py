@@ -80,7 +80,7 @@ def parse_page(source_code, show):
         game = event.select_one("div.flex-container.flex-item.left-side div.market-line-sport-icon.hidden-sm-custom span")["class"]
         game = game[2]
         temp_dict = {"game": game, "date": event_date_utc, "player1": player1,
-                     "player2": player2, "odds1": odds1, "odds2": odds2}
+                     "player2": player2, "odds1": float(odds1), "odds2": float(odds2)}
         parsed_info.append(temp_dict)
 
         if show:
