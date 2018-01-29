@@ -1,5 +1,5 @@
 .idea
 *iml
 geckodriver.log
-.csv
+*csv
 __pycache__
