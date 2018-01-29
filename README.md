@@ -18,3 +18,6 @@
     ]</br>  
     <p>You can run this script from the <b>command line</b> using parameter '<i>show</i>' to print scraped data into terminal 
     window(also parameter '<i>help</i>' available).</p> 
+<h3>saving_data.py</h3>
+<p>This script will save scraped data from web site "<i>Loot.bet</i>" to .csv file '<i>file_name</i>'.
+    Use your own parameters of '<i>delimiter</i>' and '<i>quoting</i>' or delete them for standard output.</p> 
