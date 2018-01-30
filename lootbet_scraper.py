@@ -60,10 +60,8 @@ def parse_page(source_code, show):
         # converting date_string to UTC time
         event_date = datetime.datetime(year=year, month=month, day=day, hour=hour,
                                        minute=minute)
-        if delta_time <= 0:
-            event_date_utc = event_date - datetime.timedelta(minutes=delta_time)
-        else:
-            event_date_utc = event_date + datetime.timedelta(minutes=delta_time)
+
+        event_date_utc = event_date + datetime.timedelta(minutes=delta_time)
 
         if current_time > event_date_utc:
             continue  # don't scrape events, closed for betting
